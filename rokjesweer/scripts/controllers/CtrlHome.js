@@ -117,17 +117,13 @@
 
 
 
-
-
-
-
                 $scope.sensor = null;
 
                 // Get data from sensor hacketlon
                 $scope.getSensorData = function(){
 
                     var userId = 'cab2b73044d0663c0144d0680766003f';
-                    var userToken = '54dae6797421a3f692f16ba02b6df446';
+                    var userToken = '1dfb179c2136bea3ab3a05c52cfff93';
                     var sensor = '31a1967c-5a49-465c-a59d-7ef08f368b61';
 
                     $http.get('http://in.sensolus.com:8080/server/rest/connectednodes/'+ sensor +'/data/lastvalues?owner_id='+ userId +'&token=' + userToken)

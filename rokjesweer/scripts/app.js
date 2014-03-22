@@ -39,6 +39,11 @@ var app = angular
                     controller:'afg.rokjesweer.Controllers.CtrlHome'
                 });
             $routeProvider.when(
+                '/clothes', {
+                    templateUrl:'views/clothes.html',
+                    controller:'afg.rokjesweer.Controllers.CtrlHome'
+                });
+            $routeProvider.when(
                 '/step1', {
                     templateUrl:'views/GenderSelection.html',
                     controller:'afg.rokjesweer.Controllers.CtrlGenderSelection'
