@@ -116,6 +116,10 @@
                     $scope.weatherstates["day"]["sunset"] = moment.utc($scope.weather["sys"]["sunset"], 'X').format('HH:mm:ss')
                 };
 
+                $scope.go = function ( path ) {
+                    $location.path( path );
+                };
+
 
                 $scope.today = moment().format('DD/MM/YY');
                 $scope.now = moment().format('HH:mm');

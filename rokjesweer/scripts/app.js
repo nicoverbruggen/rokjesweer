@@ -34,12 +34,12 @@ var app = angular
              ROUTES SETUP
              **************/
             $routeProvider.when(
-                '/', {
+                '/data', {
                     templateUrl:'views/Home.html',
                     controller:'afg.rokjesweer.Controllers.CtrlHome'
                 });
             $routeProvider.when(
-                '/clothes', {
+                '/', {
                     templateUrl:'views/clothes.html',
                     controller:'afg.rokjesweer.Controllers.CtrlHome'
                 });
