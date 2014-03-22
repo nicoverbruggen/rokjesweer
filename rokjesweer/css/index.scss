@@ -29,6 +29,10 @@ body, html {
     height: 33%;
     text-align: center;
   }
+  .r25 {
+    height: 25%;
+    text-align: center;
+  }
   .color2 {
     background: $color-2;
   }
@@ -49,6 +53,34 @@ body, html {
   background-color: #a8648c;
 }
 
+
 .male{
   background-color: #2c4fa8;
+}
+$geel:#F0C41D;
+$rood:#B91E46;
+$blauw:#00B8AC;
+
+h2 {
+  font-size: 36px;
+  color: $rood;
+  margin-top: 20px;
+}
+h3 {
+  font-size:14px;
+  margin-top:20px;
+  color:$geel;
+  text-transform:uppercase;
+}
+i {
+  font-size: 84px;
+  color:$blauw;
+}
+i.time {
+  font-size: 24px;
+  line-height: 84px;
+}
+
+.container-clothes {
+  background:url('assets/bg-02.png') no-repeat center center fixed;;
 }
