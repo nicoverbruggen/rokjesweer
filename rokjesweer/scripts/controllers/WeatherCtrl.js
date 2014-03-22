@@ -24,7 +24,6 @@
                         if (returned_data !== null){
                             $scope.weather =  returned_data;
                             $scope.setWeatherStates();
-                            console.log($scope.weatherstates);
                         }else{
                             console.log = "I have no idea.";
                             return null;
@@ -47,8 +46,23 @@
                     else if($scope.weather["weather"][0]["id"] >= 600 && $scope.weather["weather"][0]["id"] <= 622){
                         $scope.weatherstates["condition"] = "snow";
                     }
-                    else if($scope.weather["weather"][0]["id"] ==701){
+                    else if($scope.weather["weather"][0]["id"] == 701){
                         $scope.weatherstates["condition"] = "mist";
+                    }
+                    else if($scope.weather["weather"][0]["id"] == 800){
+                        $scope.weatherstates["condition"]="sky is clear";
+                    }
+                    else if($scope.weather["weather"][0]["id"] == 801){
+                        $scope.weatherstates["condition"]="few clouds";
+                    }
+                    else if($scope.weather["weather"][0]["id"] == 802){
+                        $scope.weatherstates["condition"]="scattered clouds";
+                    }
+                    else if($scope.weather["weather"][0]["id"] == 803){
+                        $scope.weatherstates["condition"]="broken clouds";
+                    }
+                    else if($scope.weather["weather"][0]["id"] == 804){
+                        $scope.weatherstates["condition"]="overcast clouds";
                     }
 
                     //wind
@@ -56,8 +70,8 @@
                     $scope.weatherstates["wind"]["speed"] = $scope.weather["wind"]["speed"];
                     $scope.weatherstates["wind"]["deg"] = $scope.weather["wind"]["deg"];
                     $scope.weatherstates["day"] = [];
-                    $scope.weatherstates["day"]["sunrise"] =  $scope.weather["sys"]["sunrise"];
-                    $scope.weatherstates["day"]["sunset"] =  $scope.weather["sys"]["sunset"];
+                    $scope.weatherstates["day"]["sunrise"] =  moment.utc($scope.weather["sys"]["sunrise"], 'X').format('H:mm:ss')
+                    $scope.weatherstates["day"]["sunset"] =  moment.utc($scope.weather["sys"]["sunset"], 'X').format('H:mm:ss')
                 };
 
 
