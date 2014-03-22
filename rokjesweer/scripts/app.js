@@ -38,6 +38,11 @@ var app = angular
                     templateUrl:'views/Home.html',
                     controller:'afg.rokjesweer.Controllers.CtrlHome'
                 });
+            $routeProvider.when(
+                '/weer', {
+                    templateUrl:'views/Weer.html',
+                    controller:'afg.rokjesweer.Controllers.WeatherCtrl'
+                });
 
         }]
     )
