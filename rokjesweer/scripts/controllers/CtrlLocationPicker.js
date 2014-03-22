@@ -12,16 +12,14 @@
             {
 
                 if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(success, error);
+                    navigator.geolocation.getCurrentPosition($scope.success, error);
                 } else {
                     error('not supported');
                 }
 
-                function success(position){
+                $scope.success = function(position){
                     $scope.lat = position.coords.latitude;
                     $scope.long = position.coords.longitude;
-                    alert($scope.lat);
-                    alert($scope.long);
                     $rootScope.location = {
                         "latitude": $scope.lat,
                         "longitude": $scope.long
