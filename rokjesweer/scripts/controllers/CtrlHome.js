@@ -112,10 +112,13 @@
                     $scope.weatherstates["wind"]["speed"] = $scope.weather["wind"]["speed"];
                     $scope.weatherstates["wind"]["deg"] = $scope.weather["wind"]["deg"];
                     $scope.weatherstates["day"] = [];
-                    $scope.weatherstates["day"]["sunrise"] = moment.utc($scope.weather["sys"]["sunrise"], 'X').format('H:mm:ss')
-                    $scope.weatherstates["day"]["sunset"] = moment.utc($scope.weather["sys"]["sunset"], 'X').format('H:mm:ss')
+                    $scope.weatherstates["day"]["sunrise"] = moment.utc($scope.weather["sys"]["sunrise"], 'X').format('HH:mm:ss')
+                    $scope.weatherstates["day"]["sunset"] = moment.utc($scope.weather["sys"]["sunset"], 'X').format('HH:mm:ss')
                 };
 
+
+                $scope.today = moment().format('DD/MM/YY');
+                $scope.now = moment().format('HH:mm');
 
 
                 $scope.sensor = null;
