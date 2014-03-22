@@ -16,8 +16,7 @@
 
                     $rootScope.gender = "male";
                     localStorageService.add('gender', $rootScope.gender);
-                    alert(localStorageService.get('gender'));
-                    $location.path("/step2");
+                    $location.path("/");
 
                 }
 
@@ -26,8 +25,7 @@
 
                     $rootScope.gender = "female";
                     localStorageService.add('gender', $rootScope.gender);
-                    alert(localStorageService.get('gender'));
-                    $location.path("/step2");
+                    $location.path("/");
 
                 }
 
