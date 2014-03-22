@@ -22,10 +22,16 @@
                     $scope.long = position.coords.longitude;
                     alert($scope.lat);
                     alert($scope.long);
+                    $rootScope.location = {
+                        "latitude": $scope.lat,
+                        "longitude": $scope.long
+                    }
+                    $location.path("/");
                 }
 
                 function error(){
                     alert("boom shakalaka error");
+                    $rootScope.location = null;
                 }
 
             }])

@@ -26,5 +26,33 @@
                     $location.path("/step1");
                 }
 
+                if ($rootScope.gender !== null && $rootScope.location !== null){
+                    /** Send a request when gender and location are set */
+                    $http(
+                        // Send a http request
+                        {
+                            method: 'POST',
+                            // We're sending a post request
+                            url: '',
+                            data: {
+
+                            }
+                        })
+                        .
+                        success(function(data, status, headers, config) {
+                            // If it worked out:
+                            console.log(data);              // Log all the data
+                            processSearchJSONData(data);    // Process the JSON data
+                        })
+                        .
+                        error(function(data, status, headers, config) {
+                            alert("We could not contact the file");
+                        });
+                }
+
+                function processSearchJSONData(data){
+
+                }
+
             }])
 })()
