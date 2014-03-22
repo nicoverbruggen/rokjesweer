@@ -19,7 +19,9 @@
 
                 function success(position){
                     $scope.lat = position.coords.latitude;
-                    $scope.long = position.coords.long;
+                    $scope.long = position.coords.longitude;
+                    alert($scope.lat);
+                    alert($scope.long);
                 }
 
                 function error(){

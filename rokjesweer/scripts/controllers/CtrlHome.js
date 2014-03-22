@@ -22,5 +22,9 @@
                     $location.path("/step2");
                 }
 
+                $scope.switchGender = function(){
+                    $location.path("/step1");
+                }
+
             }])
 })()
