@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="afg.rokjesweer" xmlns:ng="http://angularjs.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1" />
+        <title>Rokjesweer</title>
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+        <!-- FOUNDATION NORMALIZE -->
+        <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+        <!-- FOUNDATION CSS -->
+        <link rel="stylesheet" href="bower_components/foundation/scss/foundation.css">
+        <!-- OWN CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css">
+        <!-- MODERNIZR JS -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <div>
+            <div id="view" class="main">
+                <div class="main" ng-view></div>
+            </div>
+        </div>
+        <div id="modalDialog" class="reveal-modal" data-reveal>
+            <h2>{{ModalTitle}}</h2>
+            <p>{{ModalContent}}</p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <!-- ANGULAR JS + LOCAL STORAGE + ROUTE -->
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-local-storage/angular-local-storage.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-ui/build/angular-ui.min.js"></script>
+
+        <!-- jQUERY -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQUERY COOKIE -->
+        <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+        <!-- jQUERY PLACEHOLDER -->
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <!-- HAMMER JS -->
+        <script src="bower_components/hammerjs/hammer.min.js"></script>
+        <!-- FOUNDATION -->
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <!-- FASTCLICK.JS -->
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+
+        <!-- APP.JS -->
+        <script src="scripts/app.js"></script>
+
+        <!-- ANGULAR CONTROLLERS LOAD AFTER APP.JS -->
+
+        <!-- END OF ANGULAR CONTROLLERS -->
+    </body>
+</html>
