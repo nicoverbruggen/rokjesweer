@@ -1,7 +1,17 @@
 <div id="container">
     <div class="row r33">
-        <div class="small-3 large-3 columns">...</div>
-        <div class="small-3 large-3 columns">...</div>
+        <div class="small-3 large-3 columns">
+            <h3>Wind</h3>
+            <i class="fa fa-arrow-up" id="arrow-wind" data-degrees='{{ weatherstates["wind"]["deg"] }}'></i>
+            <h2>{{ weatherstates['wind']['speed'] }} <small>km/h</small></h2>
+        </div>
+        <div class="small-3 large-3 columns">
+            <h3>Luchtvochtigheid</h3>
+
+            {{ temperature }}
+            {{ humidity }}
+        </div>
+
         <div class="small-3 large-3 columns">...</div>
         <div class="small-3 large-3 columns">...</div>
     </div>
