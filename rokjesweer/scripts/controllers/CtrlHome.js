@@ -26,7 +26,7 @@
                 }
 
                 if ($rootScope.gender !== null && $rootScope.location !== null) {
-                    /** Send a request when gender and location are set */
+                    /** Send a request when gender and location are set
                     $http(
                         // Send a http request
                         {
@@ -47,6 +47,7 @@
                         error(function (data, status, headers, config) {
                             alert("We could not contact the file");
                         });
+                     */
                 }
 
                 function processSearchJSONData(data) {
