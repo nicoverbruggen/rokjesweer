@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#arrow').css('color','#F00');
+    //$('#arrow').css('color','#F00');
 
     console.log($('#arrow'));
 });

@@ -49,13 +49,8 @@ var app = angular
                     controller:'afg.rokjesweer.Controllers.CtrlLocationPicker'
                 });
             $routeProvider.when(
-                '/weer', {
-                    templateUrl:'views/Weer.html',
-                    controller:'afg.rokjesweer.Controllers.WeatherCtrl'
-                });
-            $routeProvider.when(
                 '/sensor', {
-                    templateUrl:'views/Weer.html',
+                    templateUrl:'views/Home.html',
                     controller:'afg.rokjesweer.Controllers.SensorCtrl'
                 });
 
