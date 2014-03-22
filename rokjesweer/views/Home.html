@@ -1,28 +1,58 @@
 <div id="container">
     <div class="row r33">
-        <div class="small-3 large-3 columns">
+        <div class="small-6 columns">
+            <h3>Nu</h3>
+
+            <h2>
+                <small>{{ today }}</small>
+                {{ now }}
+            </h2>
+        </div>
+        <div class="small-6 columns">
+            <h3>Temperatuur</h3>
+            <i class="wi-thermometer"></i>
+
+            <h2>{{ temperature }}
+                <small>° C</small>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row r33">
+        <div class="small-6 columns">
             <h3>Wind</h3>
-            <i class="fa fa-arrow-up" id="arrow-wind" data-degrees='{{ weatherstates["wind"]["deg"] }}'></i>
-            <h2>{{ weatherstates['wind']['speed'] }} <small>km/h</small></h2>
+            <i class="fa fa-arrow-up" id="arrow-wind"
+               style="-webkit-transform:rotate({{ weatherstates['wind']['deg'] }}deg)"></i>
+
+            <h2>{{ weatherstates['wind']['speed'] }}
+                <small>km/h</small>
+            </h2>
         </div>
-        <div class="small-3 large-3 columns">
+        <div class="small-6 columns">
             <h3>Luchtvochtigheid</h3>
+            <i class="wi-sprinkles"></i>
 
-            {{ temperature }}
-            {{ humidity }}
+            <h2>{{ humidity }}
+                <small>%</small>
+            </h2>
         </div>
+    </div>
 
-        <div class="small-3 large-3 columns">...</div>
-        <div class="small-3 large-3 columns">...</div>
-    </div>
     <div class="row r33">
-        <div class="small-4 large-4 columns">...</div>
-        <div class="small-4 large-4 columns">...</div>
-        <div class="small-4 large-4 columns">...</div>
+        <div class="small-6 columns">
+            <h3>Zonsopgang</h3>
+            <i class="wi-horizon-alt"></i>
+
+            <h2>{{ weatherstates['day']['sunrise'] }}
+            </h2>
+        </div>
+        <div class="small-6 columns">
+            <h3>Zonsondergang</h3>
+            <i class="wi-horizon"></i>
+
+            <h2>{{ weatherstates['day']['sunset'] }}
+            </h2>
+        </div>
     </div>
-    <div class="row r33">
-        <div class="small-4 large-4 columns">...</div>
-        <div class="small-4 large-4 columns">...</div>
-        <div class="small-4 large-4 columns">...</div>
-    </div>
+
 </div>

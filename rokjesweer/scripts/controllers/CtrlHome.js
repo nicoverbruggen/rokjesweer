@@ -26,7 +26,7 @@
                 }
 
                 if ($rootScope.gender !== null && $rootScope.location !== null) {
-                    /** Send a request when gender and location are set */
+                    /** Send a request when gender and location are set
                     $http(
                         // Send a http request
                         {
@@ -47,6 +47,7 @@
                         error(function (data, status, headers, config) {
                             alert("We could not contact the file");
                         });
+                     */
                 }
 
                 function processSearchJSONData(data) {
@@ -111,14 +112,17 @@
                     $scope.weatherstates["wind"]["speed"] = $scope.weather["wind"]["speed"];
                     $scope.weatherstates["wind"]["deg"] = $scope.weather["wind"]["deg"];
                     $scope.weatherstates["day"] = [];
-                    $scope.weatherstates["day"]["sunrise"] = moment.utc($scope.weather["sys"]["sunrise"], 'X').format('H:mm:ss')
-                    $scope.weatherstates["day"]["sunset"] = moment.utc($scope.weather["sys"]["sunset"], 'X').format('H:mm:ss')
+                    $scope.weatherstates["day"]["sunrise"] = moment.utc($scope.weather["sys"]["sunrise"], 'X').format('HH:mm:ss')
+                    $scope.weatherstates["day"]["sunset"] = moment.utc($scope.weather["sys"]["sunset"], 'X').format('HH:mm:ss')
                 };
 
                 $scope.go = function ( path ) {
                     $location.path( path );
                 };
 
+
+                $scope.today = moment().format('DD/MM/YY');
+                $scope.now = moment().format('HH:mm');
 
 
                 $scope.sensor = null;
