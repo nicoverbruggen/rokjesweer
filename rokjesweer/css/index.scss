@@ -1,0 +1,55 @@
+$color-1:red;
+$color-2:blue;
+$color-3:green;
+$color-4:yellow;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+#container {
+  background:$color-1;
+  height:100%;
+
+  .item {
+  }
+
+  .fleft {
+    float:left;
+  }
+  .fright {
+    float:right;
+  }
+  .w25 {
+    width:25%;
+  }
+  .w50 {
+    width:50%;
+  }
+  .w75 {
+    width:75%;
+  }
+
+  .color2 {
+    background:$color-2;
+  }
+  .color3{
+    background:$color-3;
+  }
+  .color4 {
+    background:$color-4;
+  }
+
+  .h25 {
+    height:25%;
+  }
+  .h50 {
+    height:50%;
+  }
+}

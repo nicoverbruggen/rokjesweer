@@ -46,8 +46,8 @@ var app = angular
  **************************************************************************/
     .run(['$rootScope', '$timeout', '$location', 'localStorageService', '$route',
         function($rootScope, $timeout, $location, localStorageService, $route){
-
-
+            // subtitle
+            $rootScope.Subtitle = "Rokjesweer App";
         }
     ]);
 

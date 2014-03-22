@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+#container {
+  background: red;
+  height: 100%; }
+  #container .fleft {
+    float: left; }
+  #container .fright {
+    float: right; }
+  #container .w25 {
+    width: 25%; }
+  #container .w50 {
+    width: 50%; }
+  #container .w75 {
+    width: 75%; }
+  #container .color2 {
+    background: blue; }
+  #container .color3 {
+    background: green; }
+  #container .color4 {
+    background: yellow; }
+  #container .h25 {
+    height: 25%; }
+  #container .h50 {
+    height: 50%; }
