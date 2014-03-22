@@ -6,17 +6,10 @@
     var controllers = angular.module('afg.rokjesweer.Controllers');
 
     // Set up as CtrlCampusPicker
-    controllers.controller('afg.rokjesweer.Controllers.CtrlHome',
+    controllers.controller('afg.rokjesweer.Controllers.CtrlLocationPicker',
         ['$scope', '$rootScope', '$http', 'localStorageService', '$timeout', '$location',
             function($scope, $rootScope, $http, localStorageService, $timeout, $location)
             {
-
-                if (localStorageService.get('gender') == null){
-                    $location.path("/step1");
-                }else{
-                    $rootScope.gender = localStorageService.get('gender');
-                    $scope.gender = $rootScope.gender;
-                }
 
             }])
 })()

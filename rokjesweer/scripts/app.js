@@ -38,6 +38,16 @@ var app = angular
                     templateUrl:'views/Home.html',
                     controller:'afg.rokjesweer.Controllers.CtrlHome'
                 });
+            $routeProvider.when(
+                '/step1', {
+                    templateUrl:'views/GenderSelection.html',
+                    controller:'afg.rokjesweer.Controllers.CtrlGenderSelection'
+                });
+            $routeProvider.when(
+                '/step2', {
+                    templateUrl:'views/LocationPicker.html',
+                    controller:'afg.rokjesweer.Controllers.CtrlLocationPicker'
+                });
 
         }]
     )
