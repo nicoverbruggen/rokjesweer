@@ -18,5 +18,9 @@
                     $scope.gender = $rootScope.gender;
                 }
 
+                $scope.getMyLocation = function(){
+                    $location.path("/step2");
+                }
+
             }])
 })()

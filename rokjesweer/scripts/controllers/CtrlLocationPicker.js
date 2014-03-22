@@ -11,5 +11,20 @@
             function($scope, $rootScope, $http, localStorageService, $timeout, $location)
             {
 
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(success, error);
+                } else {
+                    error('not supported');
+                }
+
+                function success(position){
+                    $scope.lat = position.coords.latitude;
+                    $scope.long = position.coords.long;
+                }
+
+                function error(){
+                    alert("boom shakalaka error");
+                }
+
             }])
 })()
