@@ -7,7 +7,7 @@ body, html {
   height: 100%; }
 
 #container {
-  background: red;
+  background: #eeeeee;
   height: 100%;
   overflow: hidden; }
   #container .item {
@@ -16,25 +16,12 @@ body, html {
       max-width: 100%;
       max-height: 100%;
       margin: 15px 0 0 0; }
-  #container .fleft {
-    float: left; }
-  #container .fright {
-    float: right; }
-  #container .w25 {
-    width: 25%; }
-  #container .w50 {
-    width: 50%; }
-  #container .w75 {
-    width: 75%; }
+  #container .r33 {
+    height: 33%;
+    text-align: center; }
   #container .color2 {
     background: blue; }
   #container .color3 {
     background: green; }
   #container .color4 {
     background: yellow; }
-  #container .h25 {
-    height: 25%; }
-  #container .h50 {
-    height: 50%; }
-  #container .h75 {
-    height: 75%; }

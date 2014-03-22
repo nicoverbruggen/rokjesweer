@@ -1,4 +1,4 @@
-$color-1: red;
+$color-1: #EEE;
 $color-2: blue;
 $color-3: green;
 $color-4: yellow;
@@ -17,33 +17,18 @@ body, html {
   background: $color-1;
   height: 100%;
   overflow: hidden;
-
   .item {
     text-align: center;
-
     img {
       max-width: 100%;
       max-height: 100%;
       margin:15px 0 0 0;
     }
   }
-
-  .fleft {
-    float: left;
+  .r33{
+    height: 33%;
+    text-align: center;
   }
-  .fright {
-    float: right;
-  }
-  .w25 {
-    width: 25%;
-  }
-  .w50 {
-    width: 50%;
-  }
-  .w75 {
-    width: 75%;
-  }
-
   .color2 {
     background: $color-2;
   }
@@ -52,15 +37,5 @@ body, html {
   }
   .color4 {
     background: $color-4;
-  }
-
-  .h25 {
-    height: 25%;
-  }
-  .h50 {
-    height: 50%;
-  }
-  .h75 {
-    height: 75%;
   }
 }
